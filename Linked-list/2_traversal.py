@@ -1,7 +1,7 @@
-class Node():
-	def __init__(self, val):
-		self.val = val
-		self.next = None
+
+# linked list traversal
+
+from linked_list import Node
 
 a = Node('A')
 b = Node('B')
@@ -18,15 +18,14 @@ def printLinkedList(head):
 		print(current.val)
 		current = current.next
 
-printLinkedList(a)
+printLinkedList(a) # prints A B C D
 
 
 # above function recursively
-"""
-def printLinkedList(head):
+
+def printLinkedListRecursively(head):
 	if head == None: return
 	print(head.val)
-	printLinkedList(head.next)
+	printLinkedListRecursively(head.next)
 
-printLinkedList(a)
-"""
+printLinkedListRecursively(a) # prints A B C D
