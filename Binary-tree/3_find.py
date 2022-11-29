@@ -1,5 +1,5 @@
 
-# a whether tree includes target or not
+# check whether tree includes target or not
 
 from node_class import Node
 
